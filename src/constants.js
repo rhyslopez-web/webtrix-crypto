@@ -34,7 +34,7 @@ const sponsors = [
         name: 'Tron',
         url: tron
     },
-
 ]
+
 
 export default sponsors
