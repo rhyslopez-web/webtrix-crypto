@@ -5,8 +5,8 @@ import Button from './Button'
 const Navbar = () => {
   return (
     <div className='
-    text-neutral-200 px-20 py-5 grid grid-cols-3
-    fixed top-0 left-0 right-0 z-10'
+    text-neutral-200 px-20 py-5 lg:grid grid-cols-3
+    fixed top-0 left-0 right-0 z-10 hidden'
     >
         <a className='flex items-center gap-2'>
             {/* Logo SVG */}

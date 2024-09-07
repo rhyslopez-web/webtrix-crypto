@@ -35,7 +35,7 @@ const AnalyticsBlock = () => {
             </p>
           </div>
 
-          <img src={Chart} alt="" className='opacity-90 w-full'/>
+          <img src={Chart} alt="" className='opacity-90 '/>
         </div>       
       </div>
     </GridBlock>
@@ -44,13 +44,14 @@ const AnalyticsBlock = () => {
 
 const SecurityBlock = () => {
   return(
-    <GridBlock className='lg:col-span-5 flex flex-col lg:justify-between gap-10 lg:gap-5'>
+    <GridBlock className='lg:col-span-5 flex flex-col lg:justify-between gap-14 lg:gap-5'>
       
-      <div className='flex flex-col items-end gap-2 lg:gap-5'>
-        {/* <div className='h-14 w-14 p-2 flex justify-center items-center bg-transparent border border-neutral-700 rounded-xl backdrop-blur-xl'>
+      <div className='flex flex-col items-start lg:items-end gap-5 lg:gap-5'>
+        <div className='h-14 w-14 p-2 flex justify-center items-center bg-transparent border border-neutral-700 rounded-xl backdrop-blur-xl'>
           <MdSecurity size='50' /> 
-          </div> */}
+        </div>
 
+        
         <h3 className='text-2xl lg:text-3xl lg:w-5/6 lg:text-end'>
         Advanced encryption and multi-layered security
         </h3>
@@ -60,7 +61,9 @@ const SecurityBlock = () => {
         </p>
       </div>
 
-      <img src={Security} alt="" className='w-1/2 lg:ml-5 lg:mb-5' />
+      <div className='flex justify-center lg:justify-start'>
+        <img src={Security} alt="" className='w-1/2 lg:ml-5 lg:mb-5 ' />
+      </div>
     </GridBlock>
   )
 }
