@@ -9,9 +9,9 @@ import ParticlesBackground from './ParticlesBackground'
 const HeroSection = () => {
   return (
     <>
-        <div className='h-screen flex flex-col items-start lg:items-center justify-center p-5 lg:px-20 gap-14 bg-transparent relative'>
+        <div className='h-[90vh] flex flex-col items-start lg:items-center justify-center p-5 lg:px-20 gap-14 bg-transparent relative'>
             <div className='flex flex-col justify-center items-center max-w-4xl lg:px-10'> 
-              <MainHeading>Revolutionize Your Transactions With Secure Blockchain Solutions</MainHeading>
+              <MainHeading className='lg:text-center'>Revolutionize Your Transactions With Secure Blockchain Solutions</MainHeading>
 
               <Paragraph>
                   Experience the future of digital transactiolns with our state of the art blockchain technology.
@@ -22,7 +22,7 @@ const HeroSection = () => {
 
             <SecondaryButton>Get Started</SecondaryButton>
 
-            <ParticlesBackground/>
+            {/* <ParticlesBackground/> */}
         </div>
     </>
   )

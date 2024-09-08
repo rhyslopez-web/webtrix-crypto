@@ -1,8 +1,9 @@
 import React from 'react'
+import { twMerge } from 'tailwind-merge'
 
-const MainHeading = ({children}) => {
+const MainHeading = ({className, children}) => {
   return (
-    <h1 className='text-neutral-200 text-2xl lg:text-5xl lg:text-center leading-normal mb-5 z-10'>
+    <h1 className={twMerge('text-neutral-200 text-2xl lg:text-5xl leading-normal mb-5 z-10', className)}>
         {children}
     </h1>
   )
