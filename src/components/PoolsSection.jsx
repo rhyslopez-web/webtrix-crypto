@@ -15,13 +15,12 @@ const PoolsSection = () => {
                 <div className='lg:w-5/6 flex flex-col gap-10'>
                     <div className=''>
                         <MainHeading>
-                            All-in-One Web3 ALM Dashboard
+                            Supply Liquidity to Leading Pools
                         </MainHeading>
 
                         <p className='font-light text-neutral-200'>
-                            Our all-in-one platform provides a seamless and secure solution for comprehensive Web3
-                            Asset & Liability Management, empowering you to optimize your financial operations in the
-                            decentralized economy
+                            By contributing your assets to these high-performing pools, you can earn competitibve rewards
+                            while supporting the growth and stability of the ecosystem
                         </p>
                     </div>
 

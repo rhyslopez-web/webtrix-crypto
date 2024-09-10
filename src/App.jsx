@@ -4,6 +4,7 @@ import HeroSection from "./components/HeroSection"
 import Navbar from "./components/Navbar"
 import PoolsSection from "./components/PoolsSection"
 import Ticker from "./components/Ticker"
+import Faqs from "./components/Faqs"
 
 function App() {
 
@@ -11,10 +12,11 @@ function App() {
     <div className="bg-black flex flex-col gap-40">
       <Navbar/>
       <HeroSection/>
-      <Ticker/>
+      {/* <Ticker/> */}
       <FeaturesGrid/>
       <DashboardSection/>
       <PoolsSection/>
+      <Faqs/>
     </div>
   )
 }

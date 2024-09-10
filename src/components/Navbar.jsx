@@ -16,7 +16,7 @@ const Navbar = () => {
     }
 
   return (
-    <nav className='grid grid-cols-2 px-4 py-4 fixed top-0 left-0 right-0 z-20'>
+    <nav className='grid grid-cols-2 px-4 lg:px-10 py-4 fixed top-0 left-0 right-0 z-20'>
         <a href="" className='text-neutral-100 flex items-center gap-3'>
             {/* Logo SVG */}
             <svg id="logo-59" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -69,7 +69,7 @@ const Navbar = () => {
         initial={{ opacity: 0 }}
         animate={{opacity: 100}}
         className='h-screen absolute right-0 left-0 bg-black'>
-            <div className='h-[90%] flex items-center justify-center'>
+            <div className='h-[90%] flex flex-col items-center justify-center'>
                 <ul className='flex flex-col gap-5 text-lg font-medium'>
                     <li className='text-neutral-400 hover:text-neutral-100 transition ease-in-out'><a href="">Home</a></li>
                     <li className='text-neutral-400 hover:text-neutral-100 transition ease-in-out'><a href="">Technology</a></li>
