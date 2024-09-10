@@ -1,14 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import NavbarLink from './NavbarLink'
 import Button from './Button'
+import { CiMenuBurger } from "react-icons/ci";
+import { TfiClose } from "react-icons/tfi";
+import { motion } from "framer-motion"
+import { disablePageScroll, enablePageScroll } from 'scroll-lock';
 
 const Navbar = () => {
+
+    const [mobileMenu, setMobileMenu] = useState(false)
+
+    const mobileMenuToggle = () => {
+        setMobileMenu(!mobileMenu)
+        // mobileMenu ? enablePageScroll() : disablePageScroll()
+    }
+
   return (
-    <div className='
-    text-neutral-200 px-20 py-5 lg:grid grid-cols-3
-    fixed top-0 left-0 right-0 z-10 hidden'
-    >
-        <a className='flex items-center gap-2'>
+    <nav className='grid grid-cols-2 px-4 py-4 fixed top-0 left-0 right-0 z-20'>
+        <a href="" className='text-neutral-100 flex items-center gap-3'>
             {/* Logo SVG */}
             <svg id="logo-59" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path className="stroke" d="M20.19 5.99992C14.9 4.46992 7.46999 1.23992 4.80999 6.58992C1.89999 12.4699 
@@ -45,28 +54,35 @@ const Navbar = () => {
             Webtrix.
         </a>
 
-        <ul className='flex items-center justify-center gap-5'>
-            <li>
-                <NavbarLink>Home</NavbarLink>
-            </li>
-            <li>
-                <NavbarLink>Technology</NavbarLink>
-            </li>
-            <li>
-                <NavbarLink>Features</NavbarLink>
-            </li>
-            <li>
-                <NavbarLink>Pricing</NavbarLink>
-            </li>
-            <li>
-                <NavbarLink>FAQ</NavbarLink>
-            </li>
-        </ul>
+        <a className='flex justify-end items-center z-20' onClick={mobileMenuToggle} >
+            {mobileMenu 
+            ? 
+            <TfiClose className='text-white h-10 w-10' />
+            :
+            <CiMenuBurger className='text-white h-10 w-10' />
+            }
+        </a>
 
-        <div className='flex justify-end'>
-            <Button/>
-        </div>
-    </div>
+        {mobileMenu
+        ?
+        <motion.div 
+        initial={{ opacity: 0 }}
+        animate={{opacity: 100}}
+        className='h-screen absolute right-0 left-0 bg-black'>
+            <div className='h-[90%] flex items-center justify-center'>
+                <ul className='flex flex-col gap-5 text-lg font-medium'>
+                    <li className='text-neutral-400 hover:text-neutral-100 transition ease-in-out'><a href="">Home</a></li>
+                    <li className='text-neutral-400 hover:text-neutral-100 transition ease-in-out'><a href="">Technology</a></li>
+                    <li className='text-neutral-400 hover:text-neutral-100 transition ease-in-out'><a href="">Features</a></li>
+                    <li className='text-neutral-400 hover:text-neutral-100 transition ease-in-out'><a href="">Pricing</a></li>
+                    <li className='text-neutral-400 hover:text-neutral-100 transition ease-in-out'><a href="">FAQ</a></li>
+                </ul>
+            </div>
+        </motion.div>
+        :
+        ""
+        }
+    </nav>
   )
 }
 

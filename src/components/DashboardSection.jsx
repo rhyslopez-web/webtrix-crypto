@@ -29,7 +29,7 @@ const DashboardSection = () => {
             </div>
 
             <div className='flex justify-end lg:order-last order-first'>
-                <img src={Portfolio} alt=""  className=''/>
+                <img src={Portfolio} alt=""  className='lg:w-5/6'/>
             </div>
         </div>
     </div>

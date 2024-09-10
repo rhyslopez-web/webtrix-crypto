@@ -4,7 +4,7 @@ const NavbarLink = ({children}) => {
   return (
     <>
         <a href="" 
-        className='text-sm text-neutral-300 
+        className='text-base text-neutral-300 
         hover:text-neutral-100 transition
         ease-in-out 
         '>

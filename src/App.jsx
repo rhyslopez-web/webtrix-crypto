@@ -2,6 +2,7 @@ import DashboardSection from "./components/DashboardSection"
 import FeaturesGrid from "./components/FeaturesGrid"
 import HeroSection from "./components/HeroSection"
 import Navbar from "./components/Navbar"
+import PoolsSection from "./components/PoolsSection"
 import Ticker from "./components/Ticker"
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Ticker/>
       <FeaturesGrid/>
       <DashboardSection/>
+      <PoolsSection/>
     </div>
   )
 }
