@@ -5,11 +5,12 @@ import SecondaryButton from './SecondaryButton'
 import overlay from '../assets/overlay.jpg'
 import Spline from '@splinetool/react-spline'
 import ParticlesBackground from './ParticlesBackground'
+import Ticker from './Ticker'
 
 const HeroSection = () => {
   return (
-    <>
-        <div className='h-[90vh] flex flex-col items-start lg:items-center justify-center p-5 lg:px-20 gap-14 bg-transparent relative'>
+    <div>
+        <div className='h-[90vh] lg:h-screen flex flex-col items-start lg:items-center justify-center p-5 lg:px-20 gap-14 bg-transparent relative '>
             <div className='flex flex-col justify-center items-center max-w-4xl lg:px-10'> 
               <MainHeading className='lg:text-center'>Revolutionize Your Transactions With Secure Blockchain Solutions</MainHeading>
 
@@ -22,9 +23,11 @@ const HeroSection = () => {
 
             <SecondaryButton>Get Started</SecondaryButton>
 
-            {/* <ParticlesBackground/> */}
+            <ParticlesBackground/>
         </div>
-    </>
+
+        <Ticker/>
+    </div>
   )
 }
 

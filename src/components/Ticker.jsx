@@ -7,8 +7,8 @@ import HeadingPill from './HeadingPill'
 
 const Ticker = () => {
   return (
-    <div className='flex flex-col gap-14'>
-      <div>
+    <div className='flex flex-col gap-10'>
+      <div className='px-5 lg:p-0'>
         <HeadingPill>Our Partners</HeadingPill>
 
         <SecondaryHeading>

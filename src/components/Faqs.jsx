@@ -6,7 +6,7 @@ import GridBlock from './GridBlock'
 
 const Faqs = () => {
   return (
-    <div className='flex justify-center'>
+    <div className='flex justify-center px-5 lg:px-0'>
       <GridBlock className=''>
         <div className='flex flex-col justify-center lg:items-center gap-10 lg:px-10'>        
             <div className='flex flex-col lg:w-5/6 lg:text-center'>

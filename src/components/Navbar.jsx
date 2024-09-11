@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <nav className='grid grid-cols-2 px-4 lg:px-10 py-4 fixed top-0 left-0 right-0 z-20'>
-        <a href="" className='text-neutral-100 flex items-center gap-3'>
+        <a href="" className='text-neutral-100 flex items-center gap-3 text-2xl font-medium'>
             {/* Logo SVG */}
             <svg id="logo-59" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path className="stroke" d="M20.19 5.99992C14.9 4.46992 7.46999 1.23992 4.80999 6.58992C1.89999 12.4699 
